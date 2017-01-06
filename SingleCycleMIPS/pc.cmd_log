@@ -1,0 +1,8 @@
+vhdtdtfi -lib work /home/ameyapatil/Desktop/Projects_2017/SingleCycleMIPS/pc.v -lang verilog -prj SingleCycleMIPS -o pc.spl -module pc -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a pc.spl /home/ameyapatil/Desktop/Projects_2017/SingleCycleMIPS/pc.sym 
+vhdtdtfi -lib work /home/ameyapatil/Desktop/Projects_2017/SingleCycleMIPS/pc.v -lang verilog -prj SingleCycleMIPS -o pc.spl -module pc -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w pc.spl /home/ameyapatil/Desktop/Projects_2017/SingleCycleMIPS/pc.sym 
+vhdtdtfi -lib work /home/ameyapatil/Desktop/Projects_2017/SingleCycleMIPS/pc.v -lang verilog -prj SingleCycleMIPS -o pc.spl -module pc -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w pc.spl /home/ameyapatil/Desktop/Projects_2017/SingleCycleMIPS/pc.sym 
+vhdtdtfi -lib work /home/ameyapatil/Desktop/Projects_2017/SingleCycleMIPS/pc.v -lang verilog -prj SingleCycleMIPS -o pc.spl -module pc -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w pc.spl /home/ameyapatil/Desktop/Projects_2017/SingleCycleMIPS/pc.sym 

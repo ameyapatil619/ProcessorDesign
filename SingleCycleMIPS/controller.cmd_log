@@ -1,0 +1,8 @@
+vhdtdtfi -lib work /home/ameyapatil/Desktop/Projects_2017/SingleCycleMIPS/controller.v -lang verilog -prj SingleCycleMIPS -o controller.spl -module controller -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a controller.spl /home/ameyapatil/Desktop/Projects_2017/SingleCycleMIPS/controller.sym 
+vhdtdtfi -lib work /home/ameyapatil/Desktop/Projects_2017/SingleCycleMIPS/controller.v -lang verilog -prj SingleCycleMIPS -o controller.spl -module controller -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w controller.spl /home/ameyapatil/Desktop/Projects_2017/SingleCycleMIPS/controller.sym 
+vhdtdtfi -lib work /home/ameyapatil/Desktop/Projects_2017/SingleCycleMIPS/controller.v -lang verilog -prj SingleCycleMIPS -o controller.spl -module controller -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w controller.spl /home/ameyapatil/Desktop/Projects_2017/SingleCycleMIPS/controller.sym 
+vhdtdtfi -lib work /home/ameyapatil/Desktop/Projects_2017/SingleCycleMIPS/controller.v -lang verilog -prj SingleCycleMIPS -o controller.spl -module controller -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w controller.spl /home/ameyapatil/Desktop/Projects_2017/SingleCycleMIPS/controller.sym 

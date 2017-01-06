@@ -1,0 +1,12 @@
+vhdtdtfi -lib work /home/ameyapatil/Desktop/Projects_2017/SingleCycleMIPS/dmem.v -lang verilog -prj SingleCycleMIPS -o dmem.spl -module dmem -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a dmem.spl /home/ameyapatil/Desktop/Projects_2017/SingleCycleMIPS/dmem.sym 
+vhdtdtfi -lib work /home/ameyapatil/Desktop/Projects_2017/SingleCycleMIPS/dmem.v -lang verilog -prj SingleCycleMIPS -o dmem.spl -module dmem -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a dmem.spl /home/ameyapatil/Desktop/Projects_2017/SingleCycleMIPS/dmem.sym 
+vhdtdtfi -lib work /home/ameyapatil/Desktop/Projects_2017/SingleCycleMIPS/dmem.v -lang verilog -prj SingleCycleMIPS -o dmem.spl -module dmem -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w dmem.spl /home/ameyapatil/Desktop/Projects_2017/SingleCycleMIPS/dmem.sym 
+vhdtdtfi -lib work /home/ameyapatil/Desktop/Projects_2017/SingleCycleMIPS/dmem.v -lang verilog -prj SingleCycleMIPS -o dmem.spl -module dmem -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w dmem.spl /home/ameyapatil/Desktop/Projects_2017/SingleCycleMIPS/dmem.sym 
+vhdtdtfi -lib work /home/ameyapatil/Desktop/Projects_2017/SingleCycleMIPS/dmem.v -lang verilog -prj SingleCycleMIPS -o dmem.spl -module dmem -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w dmem.spl /home/ameyapatil/Desktop/Projects_2017/SingleCycleMIPS/dmem.sym 
+vhdtdtfi -lib work /home/ameyapatil/Desktop/Projects_2017/SingleCycleMIPS/dmem.v -lang verilog -prj SingleCycleMIPS -o dmem.spl -module dmem -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w dmem.spl /home/ameyapatil/Desktop/Projects_2017/SingleCycleMIPS/dmem.sym 

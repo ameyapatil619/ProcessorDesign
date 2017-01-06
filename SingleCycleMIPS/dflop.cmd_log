@@ -1,0 +1,2 @@
+vhdtdtfi -lib work /home/ameyapatil/Desktop/Projects_2017/SingleCycleMIPS/dflop.v -lang verilog -prj SingleCycleMIPS -o dflop.spl -module dflop -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a dflop.spl /home/ameyapatil/Desktop/Projects_2017/SingleCycleMIPS/dflop.sym 

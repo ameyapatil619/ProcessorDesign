@@ -1,0 +1,717 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+Reading design: top_MIPS.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top_MIPS.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top_MIPS"
+Output Format                      : NGC
+Target Device                      : xc3s50a-5-tq144
+
+---- Source Options
+Top Module Name                    : top_MIPS
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "sign_extend.v" in library work
+Compiling verilog file "registerfile.v" in library work
+Module <signextend> compiled
+Compiling verilog file "pc.v" in library work
+Module <regfile> compiled
+Compiling verilog file "Mux21.v" in library work
+Module <pc> compiled
+Compiling verilog file "imem.v" in library work
+Module <mux> compiled
+Compiling verilog file "dmem.v" in library work
+Module <imem> compiled
+Compiling verilog file "controller.v" in library work
+Module <dmem> compiled
+Compiling verilog file "ALU.v" in library work
+Module <controller> compiled
+Compiling verilog file "top_mips.v" in library work
+Module <ALU> compiled
+Module <top_MIPS> compiled
+No errors in compilation
+Analysis of file <"top_MIPS.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <top_MIPS> in library <work>.
+
+Analyzing hierarchy for module <pc> in library <work> with parameters.
+	ADDR_WIDTH = "00000000000000000000000000000110"
+
+Analyzing hierarchy for module <imem> in library <work> with parameters.
+	ADDR_WIDTH = "00000000000000000000000000000110"
+	D_WIDTH = "00000000000000000000000000100000"
+	MEM_DEPTH = "00000000000000000000000001000000"
+
+Analyzing hierarchy for module <regfile> in library <work> with parameters.
+	ADDR_WIDTH = "00000000000000000000000000000110"
+	D_WIDTH = "00000000000000000000000000100000"
+	MEM_DEPTH = "00000000000000000000000001000000"
+
+Analyzing hierarchy for module <controller> in library <work> with parameters.
+	ADDR_WIDTH = "00000000000000000000000000000110"
+	D_WIDTH = "00000000000000000000000000100000"
+	OP_WIDTH = "00000000000000000000000000000100"
+
+Analyzing hierarchy for module <ALU> in library <work> with parameters.
+	ADDR_WIDTH = "00000000000000000000000000000110"
+	D_WIDTH = "00000000000000000000000000100000"
+	OP_WIDTH = "00000000000000000000000000000100"
+
+Analyzing hierarchy for module <dmem> in library <work> with parameters.
+	ADDR_WIDTH = "00000000000000000000000000100000"
+	DATA_WIDTH = "00000000000000000000000000100000"
+	MEM_DEPTH = "00000000000000000000000010000000"
+
+Analyzing hierarchy for module <mux> in library <work> with parameters.
+	D_WIDTH = "00000000000000000000000000100000"
+
+Analyzing hierarchy for module <signextend> in library <work> with parameters.
+	D_WIDTH = "00000000000000000000000000100000"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <top_MIPS>.
+Module <top_MIPS> is correct for synthesis.
+ 
+Analyzing module <pc> in library <work>.
+	ADDR_WIDTH = 32'sb00000000000000000000000000000110
+Module <pc> is correct for synthesis.
+ 
+Analyzing module <imem> in library <work>.
+	ADDR_WIDTH = 32'sb00000000000000000000000000000110
+	D_WIDTH = 32'sb00000000000000000000000000100000
+	MEM_DEPTH = 32'sb00000000000000000000000001000000
+INFO:Xst:2546 - "imem.v" line 14: reading initialization file "memfile.bin".
+WARNING:Xst:2319 - "imem.v" line 14: Signal imem_ram in initial block is partially initialized. The initialization will be ignored.
+Module <imem> is correct for synthesis.
+ 
+Analyzing module <regfile> in library <work>.
+	ADDR_WIDTH = 32'sb00000000000000000000000000000110
+	D_WIDTH = 32'sb00000000000000000000000000100000
+	MEM_DEPTH = 32'sb00000000000000000000000001000000
+Module <regfile> is correct for synthesis.
+ 
+Analyzing module <controller> in library <work>.
+	ADDR_WIDTH = 32'sb00000000000000000000000000000110
+	D_WIDTH = 32'sb00000000000000000000000000100000
+	OP_WIDTH = 32'sb00000000000000000000000000000100
+Module <controller> is correct for synthesis.
+ 
+Analyzing module <ALU> in library <work>.
+	ADDR_WIDTH = 32'sb00000000000000000000000000000110
+	D_WIDTH = 32'sb00000000000000000000000000100000
+	OP_WIDTH = 32'sb00000000000000000000000000000100
+Module <ALU> is correct for synthesis.
+ 
+Analyzing module <dmem> in library <work>.
+	ADDR_WIDTH = 32'sb00000000000000000000000000100000
+	DATA_WIDTH = 32'sb00000000000000000000000000100000
+	MEM_DEPTH = 32'sb00000000000000000000000010000000
+Module <dmem> is correct for synthesis.
+ 
+Analyzing module <mux> in library <work>.
+	D_WIDTH = 32'sb00000000000000000000000000100000
+Module <mux> is correct for synthesis.
+ 
+Analyzing module <signextend> in library <work>.
+	D_WIDTH = 32'sb00000000000000000000000000100000
+Module <signextend> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <pc>.
+    Related source file is "pc.v".
+    Found 6-bit up counter for signal <addr>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <pc> synthesized.
+
+
+Synthesizing Unit <imem>.
+    Related source file is "imem.v".
+WARNING:Xst:653 - Signal <imem_ram> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
+Unit <imem> synthesized.
+
+
+Synthesizing Unit <regfile>.
+    Related source file is "registerfile.v".
+    Found 64x32-bit dual-port RAM <Mram_regfi> for signal <regfi>.
+    Found 64x32-bit dual-port RAM <Mram_regfi_ren> for signal <regfi>.
+    Summary:
+	inferred   2 RAM(s).
+Unit <regfile> synthesized.
+
+
+Synthesizing Unit <controller>.
+    Related source file is "controller.v".
+Unit <controller> synthesized.
+
+
+Synthesizing Unit <ALU>.
+    Related source file is "ALU.v".
+WARNING:Xst:737 - Found 1-bit latch for signal <cout>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 32-bit shifter logical left for signal <ALUResult$shift0001> created at line 30.
+    Found 32-bit xor2 for signal <ALUResult$xor0000> created at line 29.
+    Found 32-bit adder carry out for signal <AUX_1$addsub0000>.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   1 Combinational logic shifter(s).
+Unit <ALU> synthesized.
+
+
+Synthesizing Unit <dmem>.
+    Related source file is "dmem.v".
+WARNING:Xst:647 - Input <addr<31:7>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 128x32-bit single-port RAM <Mram_dmem_ram> for signal <dmem_ram>.
+    Summary:
+	inferred   1 RAM(s).
+Unit <dmem> synthesized.
+
+
+Synthesizing Unit <mux>.
+    Related source file is "Mux21.v".
+Unit <mux> synthesized.
+
+
+Synthesizing Unit <signextend>.
+    Related source file is "sign_extend.v".
+Unit <signextend> synthesized.
+
+
+Synthesizing Unit <top_MIPS>.
+    Related source file is "top_mips.v".
+Unit <top_MIPS> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 128x32-bit single-port RAM                            : 1
+ 64x32-bit dual-port RAM                               : 2
+# Adders/Subtractors                                   : 2
+ 32-bit adder carry out                                : 1
+ 33-bit subtractor                                     : 1
+# Counters                                             : 1
+ 6-bit up counter                                      : 1
+# Latches                                              : 1
+ 1-bit latch                                           : 1
+# Logic shifters                                       : 1
+ 32-bit shifter logical left                           : 1
+# Xors                                                 : 1
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1294 - Latch <0> is equivalent to a wire in block <cout>.
+
+Synthesizing (advanced) Unit <dmem>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_dmem_ram> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 128-word x 32-bit                   |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <we>            | high     |
+    |     addrA          | connected to signal <addr>          |          |
+    |     diA            | connected to signal <wdata>         |          |
+    |     doA            | connected to signal <rdata>         |          |
+    -----------------------------------------------------------------------
+Unit <dmem> synthesized (advanced).
+
+Synthesizing (advanced) Unit <regfile>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_regfi> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 32-bit                    |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <we>            | high     |
+    |     addrA          | connected to signal <waddr>         |          |
+    |     diA            | connected to signal <wdata>         |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 64-word x 32-bit                    |          |
+    |     addrB          | connected to signal <raddr1>        |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_regfi_ren> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 32-bit                    |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <we>            | high     |
+    |     addrA          | connected to signal <waddr>         |          |
+    |     diA            | connected to signal <wdata>         |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 64-word x 32-bit                    |          |
+    |     addrB          | connected to signal <raddr2>        |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <regfile> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 128x32-bit single-port distributed RAM                : 1
+ 64x32-bit dual-port distributed RAM                   : 2
+# Adders/Subtractors                                   : 2
+ 32-bit adder carry out                                : 1
+ 33-bit subtractor                                     : 1
+# Counters                                             : 1
+ 6-bit up counter                                      : 1
+# Latches                                              : 1
+ 1-bit latch                                           : 1
+# Logic shifters                                       : 1
+ 32-bit shifter logical left                           : 1
+# Xors                                                 : 1
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1294 - Latch <cout> is equivalent to a wire in block <ALU>.
+
+Optimizing unit <top_MIPS> ...
+
+Optimizing unit <ALU> ...
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram4> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram2> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram3> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram5> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram6> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram9> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram7> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram8> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram10> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram11> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram14> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram12> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram13> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram15> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram16> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram19> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram17> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram18> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram22> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram20> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram21> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram25> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram23> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram24> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram26> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram27> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram30> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram28> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram29> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram31> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram32> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram35> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram33> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram34> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram36> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram37> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram40> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram38> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram39> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram43> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram41> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram42> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram46> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram44> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram45> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram47> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram48> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram51> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram49> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram50> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram52> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram53> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram56> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram54> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram55> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram57> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram58> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram61> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram59> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram60> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram62> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram63> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram66> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram64> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram65> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram67> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram68> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram71> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram69> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram70> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram72> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram73> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram76> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram74> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram75> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram77> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram78> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram81> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram79> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram80> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram84> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram82> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram83> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram87> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram85> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram86> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram88> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram89> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram92> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram90> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram91> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram93> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram94> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram97> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram95> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram96> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram98> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram99> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram102> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram100> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram101> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram103> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram104> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram107> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram105> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram106> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram108> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram109> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram112> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram110> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram111> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram113> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram114> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram117> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram115> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram116> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram118> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram119> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram122> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram120> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram121> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram125> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram123> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram124> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram128> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram126> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <dmem/Mram_dmem_ram1>, <dmem/Mram_dmem_ram127> are equivalent, second RAM is removed
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top_MIPS, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 6
+ Flip-Flops                                            : 6
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : top_MIPS.ngr
+Top Level Output File Name         : top_MIPS
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 81
+
+Cell Usage :
+# BELS                             : 9
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 2
+#      LUT3                        : 2
+#      LUT4                        : 1
+#      LUT4_D                      : 1
+#      VCC                         : 1
+# FlipFlops/Latches                : 6
+#      FDR                         : 6
+# RAMS                             : 1
+#      RAM32X1S                    : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 80
+#      IBUF                        : 1
+#      OBUF                        : 79
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50atq144-5 
+
+ Number of Slices:                        4  out of    704     0%  
+ Number of Slice Flip Flops:              6  out of   1408     0%  
+ Number of 4 input LUTs:                  9  out of   1408     0%  
+    Number used as logic:                 7
+    Number used as RAMs:                  2
+ Number of IOs:                          81
+ Number of bonded IOBs:                  81  out of    108    75%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk_mips                           | BUFGP                  | 7     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 2.765ns (Maximum Frequency: 361.709MHz)
+   Minimum input arrival time before clock: 1.828ns
+   Maximum output required time after clock: 7.104ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_mips'
+  Clock period: 2.765ns (frequency: 361.709MHz)
+  Total number of paths / destination ports: 21 / 6
+-------------------------------------------------------------------------
+Delay:               2.765ns (Levels of Logic = 2)
+  Source:            pc/addr_0 (FF)
+  Destination:       pc/addr_5 (FF)
+  Source Clock:      clk_mips rising
+  Destination Clock: clk_mips rising
+
+  Data Path: pc/addr_0 to pc/addr_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              6   0.495   0.571  pc/addr_0 (pc/addr_0)
+     LUT4_D:I3->O          1   0.561   0.380  pc/Mcount_addr_cy<3>11 (pc/Mcount_addr_cy<3>)
+     LUT3:I2->O            1   0.561   0.000  pc/Mcount_addr_xor<5>11 (Result<5>)
+     FDR:D                     0.197          pc/addr_5
+    ----------------------------------------
+    Total                      2.765ns (1.814ns logic, 0.951ns route)
+                                       (65.6% logic, 34.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_mips'
+  Total number of paths / destination ports: 6 / 6
+-------------------------------------------------------------------------
+Offset:              1.828ns (Levels of Logic = 1)
+  Source:            rst_pc (PAD)
+  Destination:       pc/addr_0 (FF)
+  Destination Clock: clk_mips rising
+
+  Data Path: rst_pc to pc/addr_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   0.824   0.569  rst_pc_IBUF (rst_pc_IBUF)
+     FDR:R                     0.435          pc/addr_0
+    ----------------------------------------
+    Total                      1.828ns (1.259ns logic, 0.569ns route)
+                                       (68.9% logic, 31.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_mips'
+  Total number of paths / destination ports: 38 / 38
+-------------------------------------------------------------------------
+Offset:              7.104ns (Levels of Logic = 1)
+  Source:            dmem/Mram_dmem_ram1 (RAM)
+  Destination:       phy_mem_rd<31> (PAD)
+  Source Clock:      clk_mips rising
+
+  Data Path: dmem/Mram_dmem_ram1 to phy_mem_rd<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAM32X1S:WCLK->O     32   1.635   1.073  dmem/Mram_dmem_ram1 (XLXN_31<0>)
+     OBUF:I->O                 4.396          phy_mem_rd_0_OBUF (phy_mem_rd<0>)
+    ----------------------------------------
+    Total                      7.104ns (6.031ns logic, 1.073ns route)
+                                       (84.9% logic, 15.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 36.00 secs
+Total CPU time to Xst completion: 10.42 secs
+ 
+--> 
+
+
+Total memory usage is 534860 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
+Number of infos    :  132 (   0 filtered)
+
