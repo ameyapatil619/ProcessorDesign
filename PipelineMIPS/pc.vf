@@ -1,0 +1,53 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : pc.vf
+// /___/   /\     Timestamp : 01/13/2017 13:11:11
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family artix7 -verilog /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/pc.vf -w /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/pc.sch
+//Design Name: pc
+//Device: artix7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module pc(clk, 
+          PCBranch, 
+          PCSrc, 
+          rst, 
+          pcaddr, 
+          pcplus4addr);
+
+    input clk;
+    input [31:0] PCBranch;
+    input PCSrc;
+    input rst;
+   output [31:0] pcaddr;
+   output [31:0] pcplus4addr;
+   
+   wire [31:0] XLXN_1;
+   wire [31:0] pcaddr_DUMMY;
+   wire [31:0] pcplus4addr_DUMMY;
+   
+   assign pcaddr[31:0] = pcaddr_DUMMY[31:0];
+   assign pcplus4addr[31:0] = pcplus4addr_DUMMY[31:0];
+   dflop  dflop_pc (.clk(clk), 
+                   .d(XLXN_1[31:0]), 
+                   .rst(rst), 
+                   .q(pcaddr_DUMMY[31:0]));
+   mux  mux_pc (.a(PCBranch[31:0]), 
+               .b(pcplus4addr_DUMMY[31:0]), 
+               .sel(PCSrc), 
+               .y(XLXN_1[31:0]));
+   pcplus4  pcplus4_pc (.addr(pcaddr_DUMMY[31:0]), 
+                       .pc4(pcplus4addr_DUMMY[31:0]));
+endmodule

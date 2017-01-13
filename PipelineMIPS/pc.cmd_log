@@ -1,0 +1,11 @@
+sch2sym -intstyle ise -family spartan3a -refsym pc /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/pc.sch /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/pc.sym 
+sch2sym -intstyle ise -family spartan3a -refsym pc /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/pc.sch /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/pc.sym 
+sch2sym -intstyle ise -family spartan3a -w -refsym pc /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/pc.sch /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/pc.sym 
+sch2sym -intstyle ise -family spartan3a -w -refsym pc /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/pc.sch /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/pc.sym 
+sch2sym -intstyle ise -family spartan3a -w -refsym pc /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/pc.sch /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/pc.sym 
+sch2sym -intstyle ise -family spartan3a -w -refsym pc /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/pc.sch /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/pc.sym 
+sch2sym -intstyle ise -family spartan3a -w -refsym pc /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/pc.sch /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/pc.sym 
+sch2sym -intstyle ise -family spartan3a -w -refsym pc /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/pc.sch /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/pc.sym 
+sch2sym -intstyle ise -family spartan3a -w -refsym pc /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/pc.sch /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/pc.sym 
+sch2verilog -intstyle ise -family spartan3a -tionly {} -tiext tfi -w /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/pc.sch pc.tfi 
+sch2verilog -intstyle ise -family spartan3a -tionly {} -tiext tfi -w /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/pc.sch pc.tfi 

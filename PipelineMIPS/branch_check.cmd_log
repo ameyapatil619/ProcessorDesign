@@ -1,0 +1,2 @@
+vhdtdtfi -lib work /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/branch_check.v -lang verilog -prj PipelineMIPS -o branch_check.spl -module branch_check -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w branch_check.spl /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/branch_check.sym 

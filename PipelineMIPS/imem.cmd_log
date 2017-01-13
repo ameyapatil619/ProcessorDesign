@@ -1,0 +1,18 @@
+vhdtdtfi -lib work /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/imem.v -lang verilog -prj PipelineMIPS -o imem.spl -module imem -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a imem.spl /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/imem.sym 
+vhdtdtfi -lib work /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/imem.v -lang verilog -prj PipelineMIPS -o imem.spl -module imem -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a imem.spl /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/imem.sym 
+vhdtdtfi -lib work /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/imem.v -lang verilog -prj PipelineMIPS -o imem.spl -module imem -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w imem.spl /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/imem.sym 
+vhdtdtfi -lib work /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/imem.v -lang verilog -prj PipelineMIPS -o imem.spl -module imem -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w imem.spl /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/imem.sym 
+vhdtdtfi -lib work /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/imem.v -lang verilog -prj PipelineMIPS -o imem.spl -module imem -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w imem.spl /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/imem.sym 
+vhdtdtfi -lib work /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/imem.v -lang verilog -prj PipelineMIPS -o imem.spl -module imem -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w imem.spl /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/imem.sym 
+vhdtdtfi -lib work /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/imem.v -lang verilog -prj PipelineMIPS -o imem.spl -module imem -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w imem.spl /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/imem.sym 
+vhdtdtfi -lib work /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/imem.v -lang verilog -prj PipelineMIPS -o imem.spl -module imem -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w imem.spl /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/imem.sym 
+vhdtdtfi -lang verilog -prj PipelineMIPS -o /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/imem.tfi -lib work /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS//imem.v -module imem -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+vhdtdtfi -lang verilog -prj PipelineMIPS -o /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/imem.tfi -lib work /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS//imem.v -module imem -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

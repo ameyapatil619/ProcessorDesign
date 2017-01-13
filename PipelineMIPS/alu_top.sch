@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drawing version="7">
+    <attr value="spartan3a" name="DeviceFamilyName">
+        <trait delete="all:0" />
+        <trait editname="all:0" />
+        <trait edittrait="all:0" />
+    </attr>
+    <netlist>
+        <signal name="opA(31:0)" />
+        <signal name="XLXN_3(31:0)" />
+        <signal name="ALUSrc" />
+        <signal name="opB(31:0)" />
+        <signal name="imm(31:0)" />
+        <signal name="fnct(5:0)" />
+        <signal name="ALUResult(31:0)" />
+        <signal name="regdest" />
+        <signal name="mem_read" />
+        <signal name="mem_write" />
+        <signal name="ori" />
+        <signal name="addi" />
+        <signal name="rd_addr(4:0)" />
+        <signal name="rt_addr(4:0)" />
+        <signal name="dest_addr(4:0)" />
+        <signal name="carry_sign" />
+        <signal name="XLXN_4(3:0)" />
+        <port polarity="Input" name="opA(31:0)" />
+        <port polarity="Input" name="ALUSrc" />
+        <port polarity="Input" name="opB(31:0)" />
+        <port polarity="Input" name="imm(31:0)" />
+        <port polarity="Input" name="fnct(5:0)" />
+        <port polarity="Output" name="ALUResult(31:0)" />
+        <port polarity="Input" name="regdest" />
+        <port polarity="Input" name="mem_read" />
+        <port polarity="Input" name="mem_write" />
+        <port polarity="Input" name="ori" />
+        <port polarity="Input" name="addi" />
+        <port polarity="Input" name="rd_addr(4:0)" />
+        <port polarity="Input" name="rt_addr(4:0)" />
+        <port polarity="Output" name="dest_addr(4:0)" />
+        <port polarity="Output" name="carry_sign" />
+        <blockdef name="alu">
+            <timestamp>2017-1-12T22:35:8</timestamp>
+            <rect width="336" x="64" y="-512" height="512" />
+            <rect width="64" x="0" y="-428" height="24" />
+            <line x2="0" y1="-416" y2="-416" x1="64" />
+            <rect width="64" x="0" y="-364" height="24" />
+            <line x2="0" y1="-352" y2="-352" x1="64" />
+            <rect width="64" x="0" y="-44" height="24" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <line x2="464" y1="-480" y2="-480" x1="400" />
+            <rect width="64" x="400" y="-60" height="24" />
+            <line x2="464" y1="-48" y2="-48" x1="400" />
+        </blockdef>
+        <blockdef name="alucontrol">
+            <timestamp>2017-1-12T22:35:50</timestamp>
+            <line x2="0" y1="32" y2="32" x1="64" />
+            <line x2="0" y1="96" y2="96" x1="64" />
+            <line x2="0" y1="160" y2="160" x1="64" />
+            <line x2="0" y1="224" y2="224" x1="64" />
+            <line x2="0" y1="288" y2="288" x1="64" />
+            <line x2="0" y1="352" y2="352" x1="64" />
+            <rect width="64" x="0" y="-44" height="24" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <rect width="64" x="320" y="-108" height="24" />
+            <line x2="384" y1="-96" y2="-96" x1="320" />
+            <rect width="256" x="64" y="-128" height="512" />
+        </blockdef>
+        <blockdef name="mux">
+            <timestamp>2017-1-12T5:35:52</timestamp>
+            <rect width="256" x="64" y="-192" height="192" />
+            <line x2="0" y1="-160" y2="-160" x1="64" />
+            <rect width="64" x="0" y="-108" height="24" />
+            <line x2="0" y1="-96" y2="-96" x1="64" />
+            <rect width="64" x="0" y="-44" height="24" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <rect width="64" x="320" y="-172" height="24" />
+            <line x2="384" y1="-160" y2="-160" x1="320" />
+        </blockdef>
+        <blockdef name="muxregdest">
+            <timestamp>2017-1-12T22:36:7</timestamp>
+            <rect width="64" x="320" y="20" height="24" />
+            <line x2="384" y1="32" y2="32" x1="320" />
+            <line x2="0" y1="-160" y2="-160" x1="64" />
+            <rect width="64" x="0" y="-108" height="24" />
+            <line x2="0" y1="-96" y2="-96" x1="64" />
+            <rect width="64" x="0" y="-44" height="24" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <rect width="256" x="64" y="-192" height="256" />
+        </blockdef>
+        <block symbolname="alu" name="alu_alu">
+            <blockpin signalname="opA(31:0)" name="opA(31:0)" />
+            <blockpin signalname="XLXN_3(31:0)" name="opB(31:0)" />
+            <blockpin signalname="XLXN_4(3:0)" name="ALUcon(3:0)" />
+            <blockpin signalname="carry_sign" name="cout" />
+            <blockpin signalname="ALUResult(31:0)" name="ALUResult(31:0)" />
+        </block>
+        <block symbolname="mux" name="mux_opB">
+            <blockpin signalname="ALUSrc" name="sel" />
+            <blockpin signalname="opB(31:0)" name="a(31:0)" />
+            <blockpin signalname="imm(31:0)" name="b(31:0)" />
+            <blockpin signalname="XLXN_3(31:0)" name="y(31:0)" />
+        </block>
+        <block symbolname="muxregdest" name="dest_reg">
+            <blockpin signalname="regdest" name="sel" />
+            <blockpin signalname="rd_addr(4:0)" name="a(4:0)" />
+            <blockpin signalname="rt_addr(4:0)" name="b(4:0)" />
+            <blockpin signalname="dest_addr(4:0)" name="y(4:0)" />
+        </block>
+        <block symbolname="alucontrol" name="alucontrol_alu">
+            <blockpin signalname="regdest" name="rtype" />
+            <blockpin signalname="ALUSrc" name="ALUSrc" />
+            <blockpin signalname="mem_read" name="mem_read" />
+            <blockpin signalname="mem_write" name="mem_write" />
+            <blockpin signalname="ori" name="ori" />
+            <blockpin signalname="addi" name="addi" />
+            <blockpin signalname="fnct(5:0)" name="fnct(5:0)" />
+            <blockpin signalname="XLXN_4(3:0)" name="ALUCon(3:0)" />
+        </block>
+    </netlist>
+    <sheet sheetnum="1" width="3520" height="2720">
+        <instance x="1504" y="1552" name="alu_alu" orien="R0">
+        </instance>
+        <branch name="opA(31:0)">
+            <wire x2="1504" y1="1136" y2="1136" x1="608" />
+        </branch>
+        <instance x="688" y="1392" name="mux_opB" orien="R0">
+        </instance>
+        <branch name="XLXN_3(31:0)">
+            <wire x2="1280" y1="1232" y2="1232" x1="1072" />
+            <wire x2="1280" y1="1200" y2="1232" x1="1280" />
+            <wire x2="1504" y1="1200" y2="1200" x1="1280" />
+        </branch>
+        <branch name="ALUSrc">
+            <wire x2="656" y1="1232" y2="1232" x1="608" />
+            <wire x2="688" y1="1232" y2="1232" x1="656" />
+            <wire x2="656" y1="1232" y2="1888" x1="656" />
+            <wire x2="928" y1="1888" y2="1888" x1="656" />
+        </branch>
+        <branch name="imm(31:0)">
+            <wire x2="688" y1="1360" y2="1360" x1="608" />
+        </branch>
+        <branch name="fnct(5:0)">
+            <wire x2="928" y1="1760" y2="1760" x1="608" />
+        </branch>
+        <branch name="ALUResult(31:0)">
+            <wire x2="2304" y1="1504" y2="1504" x1="1968" />
+        </branch>
+        <iomarker fontsize="28" x="608" y="1136" name="opA(31:0)" orien="R180" />
+        <iomarker fontsize="28" x="608" y="1232" name="ALUSrc" orien="R180" />
+        <iomarker fontsize="28" x="608" y="1296" name="opB(31:0)" orien="R180" />
+        <iomarker fontsize="28" x="608" y="1360" name="imm(31:0)" orien="R180" />
+        <iomarker fontsize="28" x="608" y="1760" name="fnct(5:0)" orien="R180" />
+        <iomarker fontsize="28" x="2304" y="1504" name="ALUResult(31:0)" orien="R0" />
+        <branch name="regdest">
+            <wire x2="784" y1="1824" y2="1824" x1="608" />
+            <wire x2="928" y1="1824" y2="1824" x1="784" />
+            <wire x2="784" y1="1824" y2="2240" x1="784" />
+            <wire x2="1424" y1="2240" y2="2240" x1="784" />
+        </branch>
+        <branch name="mem_read">
+            <wire x2="928" y1="1952" y2="1952" x1="608" />
+        </branch>
+        <branch name="mem_write">
+            <wire x2="928" y1="2016" y2="2016" x1="608" />
+        </branch>
+        <branch name="ori">
+            <wire x2="928" y1="2080" y2="2080" x1="608" />
+        </branch>
+        <branch name="addi">
+            <wire x2="928" y1="2144" y2="2144" x1="608" />
+        </branch>
+        <iomarker fontsize="28" x="608" y="1824" name="regdest" orien="R180" />
+        <iomarker fontsize="28" x="608" y="1952" name="mem_read" orien="R180" />
+        <iomarker fontsize="28" x="608" y="2016" name="mem_write" orien="R180" />
+        <iomarker fontsize="28" x="608" y="2080" name="ori" orien="R180" />
+        <iomarker fontsize="28" x="608" y="2144" name="addi" orien="R180" />
+        <instance x="1424" y="2400" name="dest_reg" orien="R0">
+        </instance>
+        <branch name="rd_addr(4:0)">
+            <wire x2="1424" y1="2304" y2="2304" x1="608" />
+        </branch>
+        <branch name="rt_addr(4:0)">
+            <wire x2="1408" y1="2368" y2="2368" x1="608" />
+            <wire x2="1424" y1="2368" y2="2368" x1="1408" />
+        </branch>
+        <iomarker fontsize="28" x="608" y="2304" name="rd_addr(4:0)" orien="R180" />
+        <iomarker fontsize="28" x="608" y="2368" name="rt_addr(4:0)" orien="R180" />
+        <branch name="dest_addr(4:0)">
+            <wire x2="2432" y1="2432" y2="2432" x1="1808" />
+        </branch>
+        <iomarker fontsize="28" x="2432" y="2432" name="dest_addr(4:0)" orien="R0" />
+        <branch name="carry_sign">
+            <wire x2="2400" y1="1072" y2="1072" x1="1968" />
+        </branch>
+        <iomarker fontsize="28" x="2400" y="1072" name="carry_sign" orien="R0" />
+        <branch name="opB(31:0)">
+            <wire x2="640" y1="1296" y2="1296" x1="608" />
+            <wire x2="688" y1="1296" y2="1296" x1="640" />
+        </branch>
+        <instance x="928" y="1792" name="alucontrol_alu" orien="R0">
+        </instance>
+        <branch name="XLXN_4(3:0)">
+            <wire x2="1408" y1="1696" y2="1696" x1="1312" />
+            <wire x2="1408" y1="1520" y2="1696" x1="1408" />
+            <wire x2="1504" y1="1520" y2="1520" x1="1408" />
+        </branch>
+    </sheet>
+</drawing>

@@ -1,0 +1,7 @@
+sch2hdl -intstyle ise -family spartan3a -verilog alu_exmem_dmem_memwb_wb_drc.vf -w /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/alu_exmem_dmem_memwb_wb.sch 
+sch2hdl -intstyle ise -family spartan3a -verilog alu_exmem_dmem_memwb_wb_drc.vf -w /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/alu_exmem_dmem_memwb_wb.sch 
+sch2hdl -intstyle ise -family spartan3a -verilog alu_exmem_dmem_memwb_wb_drc.vf -w /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/alu_exmem_dmem_memwb_wb.sch 
+sch2hdl -intstyle ise -family spartan3a -verilog alu_exmem_dmem_memwb_wb_drc.vf -w /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/alu_exmem_dmem_memwb_wb.sch 
+sch2sym -intstyle ise -family spartan3a -w -refsym alu_exmem_dmem_memwb_wb /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/alu_exmem_dmem_memwb_wb.sch /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/alu_exmem_dmem_memwb_wb.sym 
+sch2sym -intstyle ise -family spartan3a -w -refsym alu_exmem_dmem_memwb_wb /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/alu_exmem_dmem_memwb_wb.sch /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/alu_exmem_dmem_memwb_wb.sym 
+sch2sym -intstyle ise -family spartan3a -w -refsym alu_exmem_dmem_memwb_wb /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/alu_exmem_dmem_memwb_wb.sch /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/alu_exmem_dmem_memwb_wb.sym 

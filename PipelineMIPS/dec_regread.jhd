@@ -1,0 +1,11 @@
+MODULE dec_regread
+	SUBMODULE signextend
+		INSTANCE signextend_dec
+	SUBMODULE instr_brkup
+		INSTANCE instr_brkup_dec
+	SUBMODULE controller
+		INSTANCE controller_dec
+	SUBMODULE regfile
+		INSTANCE regfile_dec
+	SUBMODULE branch_jump_check
+		INSTANCE branch_jump

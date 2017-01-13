@@ -1,0 +1,10 @@
+sch2sym -intstyle ise -family spartan3a -w -refsym alu_top /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/alu_top.sch /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/alu_top.sym 
+sch2sym -intstyle ise -family spartan3a -w -refsym alu_top /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/alu_top.sch /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/alu_top.sym 
+sch2sym -intstyle ise -family spartan3a -w -refsym alu_top /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/alu_top.sch /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/alu_top.sym 
+sch2sym -intstyle ise -family spartan3a -w -refsym alu_top /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/alu_top.sch /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/alu_top.sym 
+sch2sym -intstyle ise -family spartan3a -w -refsym alu_top /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/alu_top.sch /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/alu_top.sym 
+sch2sym -intstyle ise -family spartan3a -w -refsym alu_top /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/alu_top.sch /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/alu_top.sym 
+sch2sym -intstyle ise -family spartan3a -w -refsym alu_top /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/alu_top.sch /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/alu_top.sym 
+sch2sym -intstyle ise -family spartan3a -w -refsym alu_top /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/alu_top.sch /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/alu_top.sym 
+sch2sym -intstyle ise -family spartan3a -w -refsym alu_top /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/alu_top.sch /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/alu_top.sym 
+sch2verilog -intstyle ise -family spartan3a -tionly {} -tiext tfi -w /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/alu_top.sch alu_top.tfi 

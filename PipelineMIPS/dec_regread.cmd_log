@@ -1,0 +1,6 @@
+sch2sym -intstyle ise -family spartan3a -w -refsym dec_regread /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/dec_regread.sch /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/dec_regread.sym 
+sch2sym -intstyle ise -family spartan3a -w -refsym dec_regread /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/dec_regread.sch /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/dec_regread.sym 
+sch2sym -intstyle ise -family spartan3a -w -refsym dec_regread /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/dec_regread.sch /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/dec_regread.sym 
+sch2sym -intstyle ise -family spartan3a -w -refsym dec_regread /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/dec_regread.sch /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/dec_regread.sym 
+sch2sym -intstyle ise -family spartan3a -w -refsym dec_regread /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/dec_regread.sch /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/dec_regread.sym 
+sch2verilog -intstyle ise -family spartan3a -tionly {} -tiext tfi -w /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/dec_regread.sch dec_regread.tfi 

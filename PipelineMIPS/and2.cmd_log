@@ -1,0 +1,10 @@
+vhdtdtfi -lib work /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/and2.v -lang verilog -prj PipelineMIPS -o and2.spl -module and2 -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w and2.spl /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/and2.sym 
+vhdtdtfi -lib work /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/and2.v -lang verilog -prj PipelineMIPS -o and2.spl -module and2 -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w and2.spl /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/and2.sym 
+vhdtdtfi -lib work /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/and2.v -lang verilog -prj PipelineMIPS -o and2.spl -module and2 -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w and2.spl /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/and2.sym 
+vhdtdtfi -lib work /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/and2.v -lang verilog -prj PipelineMIPS -o and2.spl -module and2 -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w and2.spl /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/and2.sym 
+vhdtdtfi -lib work /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/and2.v -lang verilog -prj PipelineMIPS -o and2.spl -module and2 -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w and2.spl /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/and2.sym 

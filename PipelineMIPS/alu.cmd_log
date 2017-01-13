@@ -1,0 +1,16 @@
+vhdtdtfi -lib work /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/alu.v -lang verilog -prj PipelineMIPS -o alu.spl -module alu -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w alu.spl /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/alu.sym 
+vhdtdtfi -lib work /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/alu.v -lang verilog -prj PipelineMIPS -o alu.spl -module alu -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w alu.spl /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/alu.sym 
+vhdtdtfi -lib work /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/alu.v -lang verilog -prj PipelineMIPS -o alu.spl -module alu -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w alu.spl /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/alu.sym 
+vhdtdtfi -lib work /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/alu.v -lang verilog -prj PipelineMIPS -o alu.spl -module alu -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w alu.spl /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/alu.sym 
+vhdtdtfi -lib work /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/alu.v -lang verilog -prj PipelineMIPS -o alu.spl -module alu -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w alu.spl /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/alu.sym 
+vhdtdtfi -lib work /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/alu.v -lang verilog -prj PipelineMIPS -o alu.spl -module alu -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w alu.spl /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/alu.sym 
+vhdtdtfi -lib work /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/alu.v -lang verilog -prj PipelineMIPS -o alu.spl -module alu -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w alu.spl /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/alu.sym 
+vhdtdtfi -lib work /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/alu.v -lang verilog -prj PipelineMIPS -o alu.spl -module alu -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w alu.spl /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/alu.sym 

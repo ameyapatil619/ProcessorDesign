@@ -1,5 +1,0 @@
-set -tmpdir "/home/ameyapatil/Desktop/Projects_2017/SingleCycleMIPS/xst/projnav.tmp"
-set -xsthdpdir "/home/ameyapatil/Desktop/Projects_2017/SingleCycleMIPS/xst"
-elaborate
--ifn imem.prj
--ifmt mixed

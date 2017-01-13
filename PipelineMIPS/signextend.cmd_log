@@ -1,0 +1,6 @@
+vhdtdtfi -lib work /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/signextend.v -lang verilog -prj PipelineMIPS -o signextend.spl -module signextend -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a signextend.spl /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/signextend.sym 
+vhdtdtfi -lib work /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/signextend.v -lang verilog -prj PipelineMIPS -o signextend.spl -module signextend -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w signextend.spl /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/signextend.sym 
+vhdtdtfi -lib work /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/signextend.v -lang verilog -prj PipelineMIPS -o signextend.spl -module signextend -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w signextend.spl /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/signextend.sym 

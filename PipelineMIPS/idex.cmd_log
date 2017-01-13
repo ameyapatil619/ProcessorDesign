@@ -1,0 +1,7 @@
+vhdtdtfi -lib work /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/idex.v -lang verilog -prj PipelineMIPS -o idex.spl -module idex -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w idex.spl /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/idex.sym 
+vhdtdtfi -lib work /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/idex.v -lang verilog -prj PipelineMIPS -o idex.spl -module idex -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w idex.spl /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/idex.sym 
+vhdtdtfi -lib work /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/idex.v -lang verilog -prj PipelineMIPS -o idex.spl -module idex -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w idex.spl /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/idex.sym 
+vhdtdtfi -lang verilog -prj PipelineMIPS -o /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/idex.tfi -lib work /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS//idex.v -module idex -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

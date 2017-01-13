@@ -1,0 +1,7 @@
+MODULE pc
+	SUBMODULE dflop
+		INSTANCE dflop_pc
+	SUBMODULE pcplus4
+		INSTANCE pcplus4_pc
+	SUBMODULE mux
+		INSTANCE mux_pc

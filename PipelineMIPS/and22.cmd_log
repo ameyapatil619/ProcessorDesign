@@ -1,0 +1,2 @@
+vhdtdtfi -lib work /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/and22.v -lang verilog -prj PipelineMIPS -o and22.spl -module and22 -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w and22.spl /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/and22.sym 

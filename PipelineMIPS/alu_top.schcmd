@@ -1,0 +1,10 @@
+add autowire 640 1296 640 1584 8 -sn=1
+add autowire 640 1584 2304 1632 8 -sn=1
+add autowire 2304 1632 2352 1632 8 -sn=1
+add iomarker 2352 1632 0 Unknown Unknown -sn=1
+select figure at 2131 1584 8 -branches -sn=1
+undo
+undo
+undo
+undo
+undo

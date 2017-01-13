@@ -1,0 +1,4 @@
+vhdtdtfi -lib work /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/branch_check.v -lang verilog -prj PipelineMIPS -o branch_jump_check.spl -module branch_jump_check -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w branch_jump_check.spl /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/branch_jump_check.sym 
+vhdtdtfi -lib work /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/branch_check.v -lang verilog -prj PipelineMIPS -o branch_jump_check.spl -module branch_jump_check -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w branch_jump_check.spl /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/branch_jump_check.sym 

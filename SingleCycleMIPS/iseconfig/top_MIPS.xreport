@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-01-05T22:30:38</DateModified>
+  <DateModified>2017-01-12T23:54:37</DateModified>
   <ModuleName>top_MIPS</ModuleName>
-  <SummaryTimeStamp>2017-01-05T22:02:27</SummaryTimeStamp>
+  <SummaryTimeStamp>2017-01-12T23:54:10</SummaryTimeStamp>
   <SavedFilePath>/home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/SingleCycleMIPS/iseconfig/top_MIPS.xreport</SavedFilePath>
   <ImplementationReportsDirectory>/home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/SingleCycleMIPS/</ImplementationReportsDirectory>
   <DateInitialized>2017-01-05T22:11:14</DateInitialized>

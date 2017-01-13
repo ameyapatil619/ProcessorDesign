@@ -1,0 +1,79 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : alu_top.vf
+// /___/   /\     Timestamp : 01/13/2017 13:11:11
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family artix7 -verilog /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/alu_top.vf -w /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/alu_top.sch
+//Design Name: alu_top
+//Device: artix7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module alu_top(addi, 
+               ALUSrc, 
+               fnct, 
+               imm, 
+               mem_read, 
+               mem_write, 
+               opA, 
+               opB, 
+               ori, 
+               rd_addr, 
+               regdest, 
+               rt_addr, 
+               ALUResult, 
+               carry_sign, 
+               dest_addr);
+
+    input addi;
+    input ALUSrc;
+    input [5:0] fnct;
+    input [31:0] imm;
+    input mem_read;
+    input mem_write;
+    input [31:0] opA;
+    input [31:0] opB;
+    input ori;
+    input [4:0] rd_addr;
+    input regdest;
+    input [4:0] rt_addr;
+   output [31:0] ALUResult;
+   output carry_sign;
+   output [4:0] dest_addr;
+   
+   wire [31:0] XLXN_3;
+   wire [3:0] XLXN_4;
+   
+   alucontrol  alucontrol_alu (.addi(addi), 
+                              .ALUSrc(ALUSrc), 
+                              .fnct(fnct[5:0]), 
+                              .mem_read(mem_read), 
+                              .mem_write(mem_write), 
+                              .ori(ori), 
+                              .rtype(regdest), 
+                              .ALUCon(XLXN_4[3:0]));
+   alu  alu_alu (.ALUcon(XLXN_4[3:0]), 
+                .opA(opA[31:0]), 
+                .opB(XLXN_3[31:0]), 
+                .ALUResult(ALUResult[31:0]), 
+                .cout(carry_sign));
+   muxregdest  dest_reg (.a(rd_addr[4:0]), 
+                        .b(rt_addr[4:0]), 
+                        .sel(regdest), 
+                        .y(dest_addr[4:0]));
+   mux  mux_opB (.a(opB[31:0]), 
+                .b(imm[31:0]), 
+                .sel(ALUSrc), 
+                .y(XLXN_3[31:0]));
+endmodule

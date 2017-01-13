@@ -1,0 +1,9 @@
+vhdtdtfi -lib work /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/memwb.v -lang verilog -prj PipelineMIPS -o memwb.spl -module memwb -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w memwb.spl /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/memwb.sym 
+vhdtdtfi -lib work /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/memwb.v -lang verilog -prj PipelineMIPS -o memwb.spl -module memwb -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w memwb.spl /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/memwb.sym 
+vhdtdtfi -lib work /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/memwb.v -lang verilog -prj PipelineMIPS -o memwb.spl -module memwb -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w memwb.spl /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/memwb.sym 
+vhdtdtfi -lib work /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/memwb.v -lang verilog -prj PipelineMIPS -o memwb.spl -module memwb -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w memwb.spl /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/memwb.sym 
+vhdtdtfi -lang verilog -prj PipelineMIPS -o /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS/memwb.tfi -lib work /home/ameyapatil/Desktop/Projects_2017/ProcessorDesign/PipelineMIPS//memwb.v -module memwb -template /home/ameyapatil/Desktop/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

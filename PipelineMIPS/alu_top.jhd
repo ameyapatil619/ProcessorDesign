@@ -1,0 +1,9 @@
+MODULE alu_top
+	SUBMODULE alu
+		INSTANCE alu_alu
+	SUBMODULE alucontrol
+		INSTANCE alucontrol_alu
+	SUBMODULE mux
+		INSTANCE mux_opB
+	SUBMODULE muxregdest
+		INSTANCE dest_reg
